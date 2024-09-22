@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+input[type="color"] {
+  appearance: none;
+	border: none;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+input[type="color"]::-moz-color-swatch {
+	border: none;
+}
+
+input[type="number"] {
+  width: 4rem;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+input[type="number"]:disabled {
+  appearance: textfield;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: 	#484848;
+}
+
+#root {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+#chartContainer {
+  max-height: max(50vh, 150px);
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+}
+
+.chart-block {
+  flex-grow: 1;
+  width: 0;
+  min-width: max(50%, 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.color-form {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.color-form-item {
+  display: flex;
+  gap: 1px;
+}
+
+.color-form-item.active {
+  font-weight: 700;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.color-form-item.active > input[type="color"] {
+  opacity: 0.4;
+}
