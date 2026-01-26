@@ -42,6 +42,12 @@ body {
   color: 	#484848;
 }
 
+@supports (min-height: 100dvh) {
+  body {
+    min-height: 100dvh;
+  }
+}
+
 #root {
   box-sizing: border-box;
   width: 100%;
